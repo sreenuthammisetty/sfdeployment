@@ -1,0 +1,5 @@
+<apex:component >
+  <apex:pageBlock >
+      <h2>Hi from PageBlock</h2>
+  </apex:pageBlock>
+</apex:component>

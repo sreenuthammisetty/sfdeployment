@@ -1,0 +1,10 @@
+<apex:page standardController="Candidate__c">
+    <apex:pageBlock title="Fields in hello">
+        <apex:pageBlockTable value="{!$ObjectType.Candidate__c.FieldSets.hello}" var="f">
+            <apex:column value="{!f.Label}">
+                <apex:facet name="header">Label</apex:facet>
+            </apex:column> 
+           
+        </apex:pageBlockTable> 
+    </apex:pageBlock> 
+</apex:page>

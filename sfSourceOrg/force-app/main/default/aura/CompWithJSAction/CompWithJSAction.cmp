@@ -1,0 +1,5 @@
+<aura:component >
+	<aura:attribute type="string" name="myfirstattribute" default="First Text"/>
+    Default Value: {!v.myfirstattribute} <br/>
+    <lightning:button label="Click To Change Text" onclick="{!c.method1}"/>
+</aura:component>

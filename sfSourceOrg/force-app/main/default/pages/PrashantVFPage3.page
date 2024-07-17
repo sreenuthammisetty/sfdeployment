@@ -1,0 +1,25 @@
+<apex:page controller="PrashantPg2Controller">
+   <apex:form id="fm">
+       <apex:pageBlock id="pb" >
+            <apex:pageBlockSection columns="1">
+                 <apex:pageBlockSectionItem >
+                      <apex:outputLabel >Enter A Value:</apex:outputLabel>
+                      <apex:inputText value="{!num1}"/>
+                 </apex:pageBlockSectionItem>
+                 <apex:pageBlockSectionItem >
+                      <apex:outputLabel >Enter B Value:</apex:outputLabel>
+                      <apex:inputText value="{!num2}"/>
+                 </apex:pageBlockSectionItem>
+                 <apex:pageBlockSectionItem id="psi">
+                      <apex:outputLabel id="ol">Result: </apex:outputLabel>
+                      <apex:outputText >{!res}</apex:outputText>
+                 </apex:pageBlockSectionItem>
+
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Add" action="{!add}" reRender="pb" />
+
+            </apex:pageBlockButtons>
+                   </apex:pageBlock>
+   </apex:form>
+</apex:page>

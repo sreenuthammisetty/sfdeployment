@@ -1,0 +1,16 @@
+<apex:page showHeader="true" standardController="Account">
+   <apex:form >
+       <apex:pageBlock title="Account Edit">
+            <apex:pageBlockSection title="Account Information">
+                 <apex:inputField value="{!Account.Name}"/>
+                 <apex:inputfield value="{!Account.Industry}"/>
+                 <apex:inputfield value="{!Account.Email_Id__c}"/>
+                 <apex:inputfield value="{!Account.AccountSource}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                 <apex:commandButton value="Save" action="{!save}"/>
+            </apex:pageBlockButtons>
+       </apex:pageBlock>
+       
+   </apex:form>
+</apex:page>

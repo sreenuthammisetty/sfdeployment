@@ -1,0 +1,6 @@
+<apex:component >
+  <fieldset>
+     <legend>My Component</legend>
+     <h1>Hello World!</h1>
+  </fieldset>
+</apex:component>

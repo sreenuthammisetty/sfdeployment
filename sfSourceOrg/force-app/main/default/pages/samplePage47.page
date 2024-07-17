@@ -1,0 +1,16 @@
+<apex:page sidebar="false" showHeader="true" standardController="Account">
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageBlockSection >
+                  <apex:inputField value="{!Account.Name}"/>
+                  <apex:inputField value="{!Account.AnnualRevenue}"/>
+                  <apex:inputField value="{!Account.AccountSource}"/>
+            </apex:pageBlockSection>
+            <apex:pageblockButtons >
+               <apex:commandButton value="Save" action="{!save}"/>
+            </apex:pageblockButtons>
+        </apex:pageblock>
+        
+    </apex:form>
+  
+</apex:page>

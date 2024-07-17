@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForAllPageTypes" controller="compWithLtngDataTableController" access="global" >
+	<aura:attribute name="mydata" type="Contact[]"/>
+    <aura:attribute name="mycolumns" type="List"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    <lightning:datatable data="{!v.mydata}"
+        columns="{!v.mycolumns}"
+        keyField="id"/>
+</aura:component>

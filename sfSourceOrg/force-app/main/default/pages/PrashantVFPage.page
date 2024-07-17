@@ -1,0 +1,28 @@
+<apex:page >
+    <apex:form >
+        <h1>
+        Welcome to VF Pages.
+    </h1>
+    <apex:pageBlock title="Page Block">
+         <apex:pageBlockSection title="Page Block Section" collapsible="false" columns="1">
+             <apex:pageBlockSectionItem > Page Block Section Item #1 </apex:pageBlockSectionItem>
+             <apex:pageBlockSectionItem > Page Block Section Item #2 </apex:pageBlockSectionItem>
+             <apex:pageBlockSectionItem > Page Block Section Item #3 </apex:pageBlockSectionItem>
+         </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    <div>
+        <apex:inputTextarea /> <br/>
+        
+        <apex:inputCheckbox label="Select City" dir="">
+            <apex:selectOption itemLabel="One" itemValue="one"/>
+        </apex:inputCheckbox>
+        
+        <apex:selectCheckboxes title="Select City" label="Select City">
+        <apex:selectOption itemLabel="Hyd" itemValue="one"/>
+        </apex:selectCheckboxes>
+    </div>
+    
+    </apex:form>
+    
+</apex:page>

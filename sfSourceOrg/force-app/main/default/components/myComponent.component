@@ -1,0 +1,7 @@
+<apex:component >
+  <apex:attribute name="text" type="String" description="My text to display"/>
+  <fieldset>
+     <legend>My Component</legend>
+     <h1>{!text}</h1>
+  </fieldset>
+</apex:component>

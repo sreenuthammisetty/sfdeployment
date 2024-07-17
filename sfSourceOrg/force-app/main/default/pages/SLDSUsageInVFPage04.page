@@ -1,0 +1,25 @@
+<apex:page standardController="Account" recordSetVar="Accounts">
+  <!-- Displaying records like Lightning page. -->
+  <apex:slds />
+  <apex:sectionHeader title="Account Records in Lightning Style" /> 
+  <apex:form >
+     <apex:pageBlock > 
+        <apex:pageBlockButtons >
+           <apex:commandLink value="First" action="{!First}"/> 
+           | &nbsp;
+           <apex:commandLink value="Previous" action="{!Previous}"/> 
+           | &nbsp;
+           <apex:commandLink value="Next" action="{!Next}"/>
+           | &nbsp;
+           <apex:commandLink value="Last" action="{!Last}"/> 
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!Accounts}" var="Acc">
+           <apex:column value="{!Acc.Name}"/>
+           <apex:column value="{!Acc.BillingState}"/>
+           <apex:column value="{!Acc.Rating}"/>
+           <apex:column value="{!Acc.Industry}"/>
+           <apex:column value="{!Acc.Website}"/>
+        </apex:pageBlockTable>
+     </apex:pageBlock>
+  </apex:form>
+</apex:page>

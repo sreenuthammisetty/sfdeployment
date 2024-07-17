@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller = "VishAccSearch">
+    <aura:attribute name ="keywordHolder" type="string"/>
+    <aura:attribute name="accsList" type="list"/>
+    
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="text-input-id-50">Enter Account Name: </label>
+        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+            
+            <lightning:input type="text" id="text-input-id-50" placeholder="Placeholder text…" class="slds-input" value="{!v.keywordHolder}"/>
+        </div>
+        <button class="slds-button" onclick = "{!c.findAccs}">Search</button>
+    </div>
+    
+    <aura:iteration var="a" items="{!v.accsList}">
+        {!a.Name} &nbsp; &nbsp; {!a.Phone} <br/>
+    </aura:iteration>
+</aura:component>

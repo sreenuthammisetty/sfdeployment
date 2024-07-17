@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+	<h2>Hello...</h2>
+    <h2>Welcome to Lightning AURA Framework.</h2>
+</aura:component>

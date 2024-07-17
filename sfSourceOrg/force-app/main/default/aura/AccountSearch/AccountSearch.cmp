@@ -1,0 +1,11 @@
+<aura:component access="global" controller="Ltng_accountSearch">
+	<aura:attribute name="keywordHolder" type="string" /> 
+    <aura:attribute name="accountList" type="list" /> 
+    
+ 	<lightning:input label="Enter Account Name" value="{!v.keywordHolder}"/>  
+    <lightning:button label="Search Account" onclick="{!c.findAccount}" />
+    <br/><br/>
+    <aura:iteration var="acc" items="{!v.accountList}" >  
+        {!acc.Name}<br/>
+    </aura:iteration>  
+</aura:component>
